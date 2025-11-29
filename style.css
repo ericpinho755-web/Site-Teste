@@ -1,0 +1,167 @@
+/* ======== ESTILO GERAL ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f; /* fundo dark */
+    color: #fff;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* ======== TÍTULO PRINCIPAL ======== */
+.title-hero {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* ======== GRID DE PRODUTOS ======== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.product {
+    background: #1a1a1a;
+    border-radius: 18px;
+    padding: 22px;
+    text-align: center;
+    transition: 0.35s;
+    border: 1px solid #2c2c2c;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.product:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* Produto principal */
+.main-product {
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 30px rgba(255,204,0,0.3);
+}
+
+/* Imagens dos produtos */
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+/* Preço */
+.price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+/* Botão */
+.product button {
+    padding: 12px 22px;
+    background: linear-gradient(45deg, #ff6b6b, #ff3b3b);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.product button:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+}
+
+/* ======== INFORMAÇÕES ======== */
+.product-info {
+    margin-top: 60px;
+    background: #151515;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* ======== DEPOIMENTOS ======== */
+.testimonials {
+    margin-top: 60px;
+    background: #151515;
+    padding: 40px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.testimonial-box {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 18px;
+    margin-top: 25px;
+    transition: 0.35s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.testimonial-box:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-box img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+/* ======== REDES SOCIAIS ======== */
+.social {
+    margin-top: 60px;
+    background: #151515;
+    padding: 40px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.social-links img {
+    width: 55px;
+    margin: 0 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* ======== ANIMAÇÕES ======== */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.card-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
